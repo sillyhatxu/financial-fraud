@@ -26,21 +26,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script type="text/javascript">
-        $(function(){
-            function showAuto(){
-                var text = autoCreateText();
-                $("#comment").val(text + "\n" + $("#comment").val())
-            }
 
-            t = setInterval(showAuto, 1000);
-        });
-        function autoCreateText(){
-            var timeSrc = new Date($.now()).getTime() + "";
-            var last4 = timeSrc.substring(timeSrc.length - 4,timeSrc.length);
-            return "尾号 XXX XXXX " + last4 + " - 投入 " + Math.floor(Math.random()*10+1) + "万元";
-        }
-    </script>
 </head>
 
 <body id="page-top">
@@ -77,10 +63,8 @@
         <div class="mx-auto text-center">
             <h1 class="mx-auto my-0 text-uppercase">骗子公司标题</h1>
             <h2 class="text-white-50 mx-auto mt-2 mb-5">这些写一些骗子公司经常吹的牛逼，170倍回报率，你怎么不去抢。当然，写点英文就更高大上了。</h2>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start
-                Bootstrap.</h2>
-            <a href="#about" class="btn btn-primary js-scroll-trigger" onclick="test()">Get Started</a>
-            <button onclick="test()">Get Started</button>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+            <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
         </div>
     </div>
 </header>
